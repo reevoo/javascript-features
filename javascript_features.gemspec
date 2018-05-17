@@ -12,11 +12,13 @@ Gem::Specification.new do |s|
   s.summary = 'Structured, unobtrusive JavaScript for Rails applications'
 
   s.files        = `git ls-files`.split("\n")
-  s.add_dependency "rails", "~> 3.2.11"
+  s.add_dependency "rails", "~> 4.2.10"
   s.add_dependency "jquery-rails"
 
   s.add_development_dependency "rspec-rails"
   s.add_development_dependency "capybara"
   s.add_development_dependency "poltergeist"
   s.add_development_dependency "simple_jshint"
+  s.add_development_dependency "puma"
+
 end

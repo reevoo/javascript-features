@@ -21,8 +21,8 @@ describe JavascriptFeatures::Helper do
     end
 
     it 'can check if it is enabled' do
-      use_javascript_for?('something').should be_true
-      use_javascript_for?('something-else').should be_false
+      use_javascript_for?('something').should be true
+      use_javascript_for?('something-else').should be false
     end
   end
 
