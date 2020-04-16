@@ -12,7 +12,8 @@ Gem::Specification.new do |s|
   s.summary = 'Structured, unobtrusive JavaScript for Rails applications'
 
   s.files        = `git ls-files`.split("\n")
-  s.add_dependency "rails", "~> 3.2.11"
+  s.add_dependency "rails", "~> 4.2.11.1"
+  s.add_dependency 'sprockets', '~> 3.0'  # higher version depends on ruby > 2.5
   s.add_dependency "jquery-rails"
 
   s.add_development_dependency "rspec-rails"

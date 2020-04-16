@@ -21,8 +21,8 @@ describe JavascriptFeatures::Helper do
     end
 
     it 'can check if it is enabled' do
-      use_javascript_for?('something').should be_true
-      use_javascript_for?('something-else').should be_false
+      use_javascript_for?('something').should be_truthy
+      use_javascript_for?('something-else').should be_falsy
     end
   end
 
@@ -78,5 +78,5 @@ class Response
   attr_accessor :headers
   def initialize
     @headers = {'Content-Type' => 'text/html'}
-  end 
-end 
+  end
+end
