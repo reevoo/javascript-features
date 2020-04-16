@@ -8,3 +8,4 @@ require 'capybara/rails'
 require 'capybara/rspec'
 require 'capybara/poltergeist'
 Capybara.default_driver = :poltergeist
+Capybara.server = :webrick
