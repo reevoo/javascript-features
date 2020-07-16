@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
 
   s.files        = `git ls-files`.split("\n")
   s.add_dependency "rails", "~> 4.2.11.1"
-  s.add_dependency 'sprockets', '~> 3.0'  # higher version depends on ruby > 2.5
+  s.add_dependency 'sprockets', '>= 2.8', '< 4'  # higher version depends on ruby > 2.5
   s.add_dependency "jquery-rails"
 
   s.add_development_dependency "rspec-rails"
